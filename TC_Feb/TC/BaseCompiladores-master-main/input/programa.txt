@@ -1,0 +1,55 @@
+int t = 0;
+
+int sumar(int x, int y) {
+    int suma;
+    int t = 5;
+    suma = x + y - t;
+    return suma;
+}
+
+int multiplicar(int z, int w) {
+    int multiplicacion = z * w;
+    return multiplicacion;
+}
+
+double dividir(int d, int s){
+    int division = d/s;
+    return division;
+}
+
+void main() {
+    int a;
+    int b;
+    int c;
+    c = 4;
+    b = 3;
+    a = 5;
+    int resultado = sumar(a, b);
+
+    if ( c < 20) {
+        resultado = resultado + 5;
+    } else {
+        resultado = resultado - 3;
+    }
+
+    for (int i = 0; i < 5; i = i + 1) {
+        resultado = resultado + i;
+    }
+
+    int contador = 0;
+    while (contador < 3) {
+        resultado = resultado + contador;
+        contador = contador + 1;
+    }
+
+    a = 4 + 5;
+    b = 4 + 5;
+    c = a + 6;
+    resultado = (a + b) * (c - a) + (b / 2) - (a * (b + c));
+
+    int producto = multiplicar(a, b);
+
+    return resultado + producto;
+}
+
+main();
